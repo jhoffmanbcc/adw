@@ -1,0 +1,59 @@
+
+
+
+
+body {
+
+
+	background-color: #ebd7b6;
+}
+
+
+
+
+footer {
+
+	padding: 2em ;
+	margin:  3em 0;
+	border-top: 1px solid #ddd;
+	color: #767354;
+	text-align: center;
+}
+
+
+.glyphicon {
+
+		color: #7f4539;
+}
+
+
+ .glyphicon-briefcase, 
+  .glyphicon-thumbs-up {
+
+		color: #598393
+
+}
+
+/*  OK ... Now lets modify the image in our CSS   */
+
+
+.pull-right.img-responsive {
+
+	margin:  0 0 1em 1em;
+}
+
+
+/* Notice we did not place a space... and we did this because we are tyring to be exact with the
+piece of code that we are referring to */
+
+
+/*  ok... lets check our image and see how it updated */
+
+
+
+
+
+
+
+
+

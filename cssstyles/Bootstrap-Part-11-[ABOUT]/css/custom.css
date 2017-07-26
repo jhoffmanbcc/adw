@@ -1,0 +1,42 @@
+
+
+
+
+body {
+
+
+	background-color: #ebd7b6;
+}
+
+
+
+
+footer {
+
+	padding: 2em ;
+	margin:  3em 0;
+	border-top: 1px solid #ddd;
+	color: #767354;
+	text-align: center;
+}
+
+
+/* We  can also set specific colors for each glyphicon as follows */
+
+
+.glyphicon {
+
+		color: #7f4539;
+}
+
+/* In this example, we are overriding the original glyphicon .. although we could just specify each glyphicon */
+
+
+ .glyphicon-briefcase, 
+  .glyphicon-thumbs-up {
+
+		color: #598393
+
+}
+
+
