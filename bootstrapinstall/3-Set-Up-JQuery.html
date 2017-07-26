@@ -1,0 +1,71 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+		<meta charset="utf-8">
+
+
+		<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+	
+
+		<title>  Building a Bootstrap Site </title>
+		<link href= "css/bootstrap.min.css" rel="stylesheet">
+		<link href= "css/custom.css" rel="stylesheet">
+
+		<!-- Now we will set up the javascript to incorporate with Twitter Bootstrap, we will need to link to 3 Javascript files, to begin we will link to JQuery and Bootstraps Javascript ->
+
+		<!-- Lets begin by going to the JQuery website and reading about what JQuery is, the link to JQuery is jquery.com, and they describe jquery as:
+
+		jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.  -->
+
+		<!-- There description is true, Jquery is a widely used platform that has made the web that we know of today more interactive and integrated with modern technologies. -->
+
+		<!-- Now we will download Jquery.  There are two ways to download JQuery.  We could just go to the main site of http://jquery.com/download/  and download JQuery, place it on our server and link to it...  -->
+
+		<!-- Or we could use the Content Delivery Network where jquery is stored, and link to it.  The advantage of this is, that when someone goes to our page, they would then be routed to our JQuery file on our server.  This is fine, and we know that as long as our server is up, it will be working.  Although this take be slower than the alternative.  -->
+
+		<!-- The alternative of using the Content Delivery Network or CDN is that if the user who is viewing the site has used another site that referenced that CDN, our site will load a lot faster because the JQuery file will already be Cached on their computer.  -->
+
+		<!-- A cache is a little file that will remain on our computers (until our browser deletes it) that will help our computer load our webpage.   You may notice that sometimes when you go to open your computer, Google will open and look normal, or another site may do the same.  It will look normal even before you setup your Wifi Network.  This is because the old cached file will automatically display the old content. -->
+
+		<!-- JQuery has two versions (1.0 and 2.0), the older version is 1.0 and will be compatable with older browsers, since a lot of people have not made the switch over yet, we will use the 1.0 version.  -->
+
+		<!-- Now we will need to add a piece of script in order to integrate our jquery -->
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+	<!-- we will add our line of code within the body of our document and we are placing this in the footer of our document.  We are doing this because jquery loads slower, although it applies to the functionality of the page.  Therefore we want the rest of the page to load the aesthetic before the jquery so it seems like everything is working quickly... then when the user begins to engage or read with the web page, hopefully our line of jquery code will be engaged!!  -->
+
+
+<!-- javascript -->
+
+		<script src="http://code.jquery.com/jquery-latest-min.js"> </script>
+
+<!-- Next we will add the Bootstrap Javascript page that came with our bootstrap package.  We place this file after the above file because it is dependant on the jquery file for functionality   -->
+
+	<script src="js/boostrap.min.js"></script>
+
+
+<!-- So what is the difference between javascript and jquery... Well we know that javascript is a scripting language that was designed for web browsers, they are often the power behind slideshows and in general, javascript helps to create dynamic content. -->
+
+<!-- JQuery is the same thing as javascript, although it was built as a layer on top of javascript that was built as a framework to optimize javascript by writing functions with fewer lines of code, and make the general experience of writing javascript easier.  The syntax of JQuery is shorter and will do the same thing as javascript, so if you are heading out building sites with javascript, JQuery may be your best starting point, although as you get deeper into design and implementation, you may have to come back around to javascript, as it has the core functionality afterall -->
+
+
+
+</body>
+</html>
+
