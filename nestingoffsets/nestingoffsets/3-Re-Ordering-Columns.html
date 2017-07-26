@@ -1,0 +1,73 @@
+<!-- Now lets look at Re-ordering our columns.  -->
+
+<!-- You will notice that when we begin to move down to our mobile version, and all the items begin to get stacked on top of each other... that things can get funky... Well in this situation we may want to start to re-organize the priorities on our page -->
+
+<!-- Previously, we discussed that we created an aside... and the aside is a bit of information that is not the largest priority of the site, rather the article is the most important part of the site.  -->
+
+<!-- Well when the page collapses and things start to stack on top of each other, the Aside currently appears above the article... This is not that great, because we know that the article is more important than the aside, and we will want it to appear before the aside... So then now we will want to go ahead and learn how to re-arrange the ordering so when the site becomes mobile ready, the article stacks on top of the other area  -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Building a Bootstrap Site </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- row 1 -->
+    <header class="row">
+    	<div class="col-lg-6 col-sm-5">
+            <a href="#"> <img src="img/logo.png" alt="Wyatt's App Store. click for home."></a>
+        </div>
+    	<div class="col-lg-6 col-sm-7">
+            <img src="img/mustache.png" alt="">
+        </div>
+    </header>
+    
+    <!-- row 2 -->
+
+    <div class="row">
+
+<!-- Now as we referenced before... Twitter Bootstrap begins from the mobile version and then scales up... so in this instance we will want to cut the aside out... and place it underneath the article area ... we will then re-arrange them to fit to the larger design in the next step. -->
+
+        <article class="col-md-offset-1 col-sm-offset-1 col-med-8  col-sm-7  ">
+            <h1>About Us</h1>
+            <p><img src="img/Wyatt-Earp.png" class="pull-right">Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  </p>
+             <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip.</p>  
+
+        </article>
+
+         <aside class="col-md-3 col-sm-4">
+            <h3>Some Tips on Wrangling Hearty Applications</h3>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>If you have any questions about how to find some apps please <a href="#">contact Wyatt Earp</a> for advice.</p>
+         </aside>
+          
+    </div>
+
+    
+    
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola. </p>
+          <p> A website built by an average Cowpoke for everyone that wears chaps</p>
+    </footer>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

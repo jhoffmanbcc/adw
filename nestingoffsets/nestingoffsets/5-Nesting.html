@@ -1,0 +1,101 @@
+
+
+<!-- Ok... now lets look at nesting rows in our elements -->
+
+<!-- For this we will an addition on the last page that we were working with, which will provide some review to creating our columns...  -->
+
+<!-- In this instance we are going to create 4 mini columns at the bottom of our page -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Building a Bootstrap Site </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- row 1 -->
+    <header class="row">
+    	<div class="col-lg-6 col-sm-5">
+            <a href="#"> <img src="img/logo.png" alt="Wyatt's App Store. click for home."></a>
+        </div>
+    	<div class="col-lg-6 col-sm-7">
+            <img src="img/mustache.png" alt="">
+        </div>
+    </header>
+    
+    <!-- row 2 -->
+
+     <div class="row">
+
+        <article class=" col-md-offset-1 col-sm-offset-1 col-md-8 col-sm-7 col-md-push-3 col-sm-push-4">
+
+            <h1>About Us</h1>
+            <p><img src="img/Wyatt-Earp.png" class="pull-right">Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  </p>
+             <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip.</p>  
+
+        </article>
+
+
+         <aside class="col-md-3 col-sm-4 col-md-pull-9 col-sm-pull-8">
+
+            <h3>Some Tips on Wrangling Hearty Applications</h3>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>If you have any questions about how to find some apps please <a href="#">contact Wyatt Earp</a> for advice.</p>
+         </aside>
+
+    </div>
+
+    <!-- So now we will create row 3, and the layout options we will choose for these items are col-md-3: this will be so we can have four columns accross our page... as review our max can only be 12 columns... therefore 3 * 4 = 12...  -->
+
+    <!-- Then below that we will go with two columns for our mobile layout or col-xs-6.  6 * 2 will give us two columns accross our page for our layout -->
+
+   <!-- row 3 --> 
+    
+    <div class = "row">
+
+        <div class = "col-md-3 col-xs-6">
+            <h4>  Join our Mail List </h4>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p><a href="#"> Join Here >> </a></p>
+        </div>
+        <div class = "col-md-3 col-xs-6">
+            <h4>  Employment Opportunities </h4>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p><a href="#"> Check Here >> </a></p>
+        </div>
+        <div class = "col-md-3 col-xs-6">
+            <h4>  Special Events </h4>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p><a href="#"> See Our Calendar >> </a></p>
+        </div>
+         <div class = "col-md-3 col-xs-6">
+            <h4>  Our Social Media</h4>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p><a href="#"> Join Here >> </a></p>
+        </div>
+
+    <!-- Nice now we have that part !! -->
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola. </p>
+          <p> A website built by an average Cowpoke for everyone that wears chaps.</p>
+    </footer>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

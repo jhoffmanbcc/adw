@@ -1,0 +1,83 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Building a Bootstrap Site </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- row 1 -->
+    <header class="row">
+    	<div class="col-lg-6 col-sm-5">
+            <a href="#"> <img src="img/logo.png" alt="Wyatt's App Store. click for home."></a>
+        </div>
+    	<div class="col-lg-6 col-sm-7">
+            <img src="img/mustache.png" alt="">
+        </div>
+    </header>
+    
+    <!-- row 2 -->
+
+     <div class="row">
+
+<!-- Ok, now we will add some more twitter bootstrap classes to make this happen. Those classes will be called push classes -->
+
+
+        <article class=" col-md-offset-1 col-sm-offset-1 col-md-8 col-sm-7 col-md-push-3 col-sm-push-4">
+
+<!-- You will notice that we created a push for both the small and the medium settings. -->
+<!-- The push means that we will push the article accross the page, in this case 3 or 4 columns-->
+
+<!-- Lets take a look at it... we will notice that it pushes our content to the right -->
+
+            <h1>About Us</h1>
+            <p><img src="img/Wyatt-Earp.png" class="pull-right">Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  </p>
+             <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip.</p>  
+
+        </article>
+
+<!-- Now we will want to also update our other aside class, although in this instance we will need to pull our aside accross the page -->
+
+         <aside class="col-md-3 col-sm-4 col-md-pull-9 col-sm-pull-8">
+
+<!-- Now lets go check it out... and we will see that when we hit that breakpoint the text goes underneath the other area of the page, leaving the article ontop for the mobile layout -->
+
+<!-- Now we can see how our new configurations are set on our site.  Another important reason that we do this, is that when our sites are crawled by google, it is important to have the correct content displaying for better search results  -->
+
+<!-- If it is still confusing to you ... try pushing and pulling the content on your site with different variations to get an idea of the effect that this feature has on the site -->
+
+            <h3>Some Tips on Wrangling Hearty Applications</h3>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>If you have any questions about how to find some apps please <a href="#">contact Wyatt Earp</a> for advice.</p>
+         </aside>
+
+    </div>
+
+    
+    
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola. </p>
+          <p> A website built by an average Cowpoke for everyone that wears chaps.</p>
+    </footer>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

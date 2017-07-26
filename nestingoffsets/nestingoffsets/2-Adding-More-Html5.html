@@ -1,0 +1,71 @@
+<!-- OK.. Now lets begin to look at offsetting our columns.. First we will build an "About Page for our website"-->
+
+<!-- Lets create more space between the two columns without playing around with the Twitter Bootstrap Grid System -->
+
+<!-- Offsetting is about creating an empty row for the column in order to create more space between columns... so lets place an empty row between our Tips section and our About Us section -->  
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Building a Bootstrap Site </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- row 1 -->
+    <header class="row">
+    	<div class="col-lg-6 col-sm-5">
+            <a href="#"> <img src="img/logo.png" alt="Wyatt's App Store. click for home."></a>
+        </div>
+    	<div class="col-lg-6 col-sm-7">
+            <img src="img/mustache.png" alt="">
+        </div>
+    </header>
+    
+    <!-- row 2 -->
+    <div class="row">
+         <aside class="col-md-3 col-sm-4">
+            <h3>Some Tips on Wrangling Hearty Applications</h3>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>If you have any questions about how to find some apps please <a href="#">contact Wyatt Earp</a> for advice.</p>
+         </aside>
+
+<!-- So for the article area, we are going to add an offset, and we will need to make our first column smaller.  Therefore our column of medium column of 9 will now move to 8 and our small column of 8 will move to 7.  Then we will add a medium offest inbetween.  The offest is always add to the left side of the item before.  That is why we are placing it within our article area.  -->
+
+<!-- We will have to do the same thing for to offest the small column... with an offset of 1 -->
+
+
+        <article class="col-md-offset-1  col-sm-offset-1 col-med-8 col-sm-7  ">
+            <h1>About Us</h1>
+            <p><img src="img/Wyatt-Earp.png" class="pull-right">Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  </p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip.</p>  
+
+        </article>
+
+        
+    </div>
+
+<!-- Great, now lets go and look how that has changed our design -->
+    
+    
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola. </p>
+          <p> A website built by an average Cowpoke for everyone that wears chaps</p>
+    </footer>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
