@@ -1,0 +1,75 @@
+
+
+
+
+body {
+
+
+	background-color: #ebd7b6;
+}
+
+
+
+
+footer {
+
+	padding: 2em ;
+	margin:  3em 0;
+	border-top: 1px solid #ddd;
+	color: #767354;
+	text-align: center;
+}
+
+
+.glyphicon {
+
+		color: #7f4539;
+}
+
+
+
+
+
+.pull-right.img-responsive {
+
+	margin:  0 0 1em 1em;
+}
+
+/* Ok... lets modify our button colors to match our color pallette */
+
+
+.btn-info {
+
+	background-color: #598393;
+	border-color: #598393;
+	color: #ffffff;
+;
+}
+
+/* In a similar way we can modify our hover, focus, active, open, dropdown, etc... one way we can find the 
+default settings for Bootstrap Button states, is by using firebug and investigating the element on the page 
+When we do that we will find that ...  */
+
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+
+
+color: #ffffff;
+background-color: #7f4539;
+border-color: #7f4539 ;
+
+}
+
+
+
+/*  Now we have all of these lets check it out... */
+
+
+/*  we can ofcourse modify each individually if that is your desire, here is a great website that goes over 
+different button styles:  https://bootstrapbay.com/blog/bootstrap-button-styles/
+
+*/
+
+
+
+

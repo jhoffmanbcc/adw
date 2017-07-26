@@ -1,0 +1,92 @@
+
+
+
+
+body {
+
+
+	background-color: #ebd7b6;
+}
+
+
+
+
+footer {
+
+	padding: 2em ;
+	margin:  3em 0;
+	border-top: 1px solid #ddd;
+	color: #767354;
+	text-align: center;
+}
+
+
+.glyphicon {
+
+		color: #7f4539;
+}
+
+
+ .glyphicon-briefcase, 
+  .glyphicon-thumbs-up {
+
+		color: #598393
+
+}
+
+
+
+.pull-right.img-responsive {
+
+	margin:  0 0 1em 1em;
+}
+
+
+
+.btn-info {
+
+	background-color: #598393;
+	border-color: #598393;
+	color: #ffffff;
+;
+}
+
+
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+
+
+color: #ffffff;
+background-color: #7f4539;
+border-color: #7f4539 ;
+
+}
+
+
+/* For our custom CSS of the default panel... we will use the reference for the panel-default .. and then we will change the 
+background color, the padding... and we will fix the margin a little... so that border is aligned to the heading of the article */
+
+
+.panel-default {
+
+	background-color: #ebd7b6;
+	border-color: #598393;
+	padding: 1em ;
+	margin: 2em 0 0 0;
+
+}
+
+/*  Then we will need to add the panel default to the panel heading to update the background and border color of the interior box */
+
+.panel-default .panel-heading {
+
+	background-color: #598393;
+	border-color: #ebd7b6;
+	color: #ffffff;
+
+}
+
+
+
+
+

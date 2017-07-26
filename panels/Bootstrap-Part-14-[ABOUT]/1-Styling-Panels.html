@@ -1,0 +1,153 @@
+
+
+<!--  Ok... now we will learn how to style panels within Bootstrap.  To create panels, we should go to the bootstrap website and 
+    look up panels under:  getbootstrap/components/#panels.   In that area we will see that in order to make panels we will need
+    to wrap the panels around div tags... so lets go and add a panel around our aside area  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Building a Bootstrap Site </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <!-- row 1 -->
+    <header class="row">
+    	<div class="col-lg-6 col-sm-5">
+            <a href="#"> <img src="img/logo.png" alt="Wyatt's App Store. click for home."></a>
+        </div>
+    	<div class="col-lg-6 col-sm-7">
+
+            <img src="img/mustache.png" alt=""  class="hidden-xs">
+
+        </div>
+    </header>
+    
+    <!-- row 2 -->
+
+     <div class="row">
+
+        <article class=" col-md-offset-1 col-sm-offset-1 col-md-8 col-sm-7 col-md-push-3 col-sm-push-4">
+
+
+
+            <h1>About Us</h1>
+            <p><img src="img/Wyatt-Earp.png" class="pull-right img-responsive" >Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.</p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  </p>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola.  Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Prosciutto short ribs brisket capicola tri-tip.</p>  
+
+
+    <div class = "row">
+
+        <div class = "col-md-3 col-xs-6">
+
+
+
+            <h4> <span class= "glyphicon glyphicon-envelope"></span> Contact Us </h4>
+
+
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. </p>
+
+            <p><a href="#"  class="btn btn-info" > Join Here >> </a></p>
+        </div>
+
+        <div class = "col-md-3 col-xs-6">
+            <h4> <span class= "glyphicon glyphicon-briefcase"></span>  Employment </h4>
+
+
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. </p>
+
+            <p><a href="#" class="btn btn-info"> View Jobs >> </a></p>
+        </div>
+        <div class = "col-md-3 col-xs-6">
+
+
+            <h4> <span class= "glyphicon glyphicon-star-empty"></span> Events </h4>
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. </p>
+
+
+            <p><a href="#" class="btn btn-info"> Calendar >> </a></p>
+        </div>
+         <div class = "col-md-3 col-xs-6">
+
+
+            <h4> <span class= "glyphicon glyphicon-thumbs-up"></span>  Social Media</h4>
+
+            <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop.</p>
+
+
+            <p><a href="#" class="btn btn-info"> Join Here >> </a></p>
+        </div>
+
+        </article>
+
+
+
+
+         <aside class="col-md-3 col-sm-4 col-md-pull-9 col-sm-pull-8">
+
+<!-- So below our column layouts we will begin to create our classes of panels -->
+
+
+            <div class ="panel panel-default"> 
+<!-- Then we need to add a new slash div before the end of our aside area -->
+
+<!-- Next we will create a panel heading around our h3 heading -->
+
+
+            <div class="panel panel-heading">
+
+                <h3>Some Tips on Wrangling Hearty Applications</h3>
+
+<!-- And we will need to close that heading with a div tag before the paragraph -->
+
+            </div>
+
+<!-- Now when we refresh, we will see an updated white heading area -->
+
+<!-- Next we create a div with a panel of body around our text -->
+                <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop.  Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. Bacon ipsum dolor ,Bacon ipsum dolor amet meatball porchetta tongue </p>
+                <p>If you have any questions about how to find some apps please <a href="#">contact Wyatt Earp</a> for advice.</p>
+            
+                </div>
+
+            </div>
+            
+         </aside>
+
+    </div>
+
+
+<!-- Now we have a div panel around our text, but it looks like we will need to create some padding in the panel... so lets
+    go over to the CSS file and fix that up -->
+
+   <!-- row 3 --> 
+    
+    
+
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p>Bacon ipsum dolor amet meatball porchetta tongue, venison cow alcatra brisket landjaeger beef ribs doner shoulder capicola bacon ham hock pork chop. <br> Prosciutto short ribs brisket capicola tri-tip. Corned beef shoulder tenderloin, pork loin tongue sirloin chuck capicola. </p>
+          <p> A website built by an average Cowpoke for everyone that wears chaps.</p>
+    </footer>
+
+</div> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
