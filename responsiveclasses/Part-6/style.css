@@ -1,0 +1,97 @@
+
+body{
+
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica", san-serif;
+	font-weight: 100;
+	box-sizing: border-box;
+}
+
+header {
+
+
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 150px;
+	padding: 50px 0px;
+	background-color: #009bc7;
+}
+
+nav: after {
+
+	content:"";
+	clear:both;
+}
+
+nav li{
+
+	display:inline-block;
+	color: #333;
+	padding: 20px;
+	list-style:none;
+
+}
+
+article {
+
+	clear: both;
+	padding: 30px 60px;
+}
+
+footer {
+
+	background-color:#e3e3d3;
+	border:1px solid #d0d0d0;
+	clear: both;
+	padding: 30px 60px;
+}
+
+
+h1 {
+
+	text-align:center;
+}
+
+
+/* We can also use multiple media queries together ... for example
+here the operator adds values to the the paramater of creating a 
+page, in this example it uses something called a logic and/or statement.
+
+A logic statement sometimes referred to as && in computer programming
+terminology... needs both variables of the and to be true for the statement
+to be true... 
+
+For example:  If the weather is cold and rainy Then we will go to a movie
+
+In this instance if it is cold and not rainy .. we will still not go to 
+a movie.  It needs to be both cold and rainy for us to go to the movie.
+
+So below... we will create the single operator that we used before which
+is that the following code will only work when we are not in the screen
+media... but then we will add an & operator... and say 
+
+if we are on the screen, and the screen is less than 400px than we will
+will also display the code below */
+
+
+@media not screen, screen and (max-width:400px) {
+
+/* on the other hand... the "," functions as a logical or...
+which means if the screen is true than the code below will be
+applied OR if the scree and max-width is under 400px than 
+the following will be applied */
+
+	nav, footer {
+		display:none;
+	}
+
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+}
+
+
+

@@ -1,0 +1,62 @@
+
+body{
+
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica", san-serif;
+	font-weight: 100;
+	box-sizing: border-box;
+}
+
+
+header {
+
+
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 150px;
+	padding: 50px 0px;
+	background-color: #009bc7;
+}
+
+.column{
+
+	float: left;
+	font-weight: 300;
+	padding: 30px;
+	margin: 0;
+	width: 50%;
+	font-size: 14px;
+	color: #7d7d7d;
+	box-sizing: border-box;
+
+}
+
+
+/* Ok... so most media queries deal with width... considering the main difference
+between different interfaces is the width of the interface */
+
+@media(max-width:600px) {
+
+	.column{
+		width: 100%;
+	}
+}
+
+/* ok... lets add some more changes based on the changing dimension of the page 
+this time we will do it by setting a range */
+
+@media (min-width:400px) and (max-width: 800px) {
+
+	header {
+
+		background-color: orange;
+	}
+}
+
+/* Here is a link to different types of media queries
+http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+*/
+

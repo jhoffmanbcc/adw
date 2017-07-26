@@ -1,0 +1,23 @@
+
+/* By adding the content that we had within the previous media query... we will
+essentially receive the same effect */
+
+.column {
+
+		width: 100%;
+	}
+
+/* so after trying the two different types of media queries... there are 
+advantages and disadvantages to both of them...
+
+An embedded media query ... does not inlcude an extra css file .. .therefore
+your site will run a bit faster since it does not have to make an extra 
+http request ... 
+
+The embedded version also allows you to keep all the styles
+in a singular location... for example.. you can list each media query under
+each other... so that they are easy to visually understand what you created. 
+
+Although if you have a lot of information on your page.. the embedded css
+option may create too long of a page.. .and therefore it may be easier
+to organize with multiple pages. */

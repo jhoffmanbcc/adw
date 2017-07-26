@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<! Now we will adjust the stylesheet... to be more dynamic.. and responsive, by adding a new media type... we will add the media type inbetween the link relative and the href.. ->
+
+<! If we follow this link  http://www.w3schools.com/css/css_mediatypes.asp we can see thathere are quite a few of extra media types for accessibilty ... ->
+
+<! media queries function as if/else statements, which are true or false statements, detecting what the screen size is that you are utlizing... the most common media-types are:  screen, print, handheld, or tv... so first we 
+will decide where we are planning on creating this if/else relationships... for
+our example, we will selectt screen 
+
+our stylesheet call or link will begin looking like the following... 
+
+<link rel="stylesheet" media="screen and 
+
+
+After we have decided on the media type we will add the term "and" and we will 
+select the media feature that we want to use.  Possible media features are:
+width, height, min-width, min-height, max-width, and max-height ...
+
+for our first stylesheet reference we will select the media feature of min-width..
+
+therefore our link will loook like the following:
+
+<link rel="stylesheet" media="screen and (min-width: 0px)" href="small.css"
+
+notice that we placed a bracket around the MEDIA FEATURE, and assigned a value to 
+associate with that feature.  That value is considered a "break point" this is the
+number where we want the site to change and to display new styles associated with 
+the new size of the site.
+
+
+
+
+for example when we add -- media="screen and (min-width: 0px)" ->
+
+<!  the website will look and try to detect if the screen width is greater than 0px... in this case it will display the small.css page that we created ->
+
+<link rel="stylesheet" media="screen and (min-width: 0px)" href="small.css">
+
+<! then we will override that css style sheet at a higher width of 1000px->
+
+
+ <link rel="stylesheet" media="screen and (min-width: 600px)" href="medium.css">
+
+ <! then we will override that css style sheet at a higher width of 1400px->
+
+
+ <link rel="stylesheet" media="screen and (min-width: 1000px)" href="large.css">
+
+</head>
+
+<body>
+
+
+<div id="responsivelDiv"> Notes for Responseive Design</div>
+
+</body>
+
+</html>
+
+<! Now when we 
+

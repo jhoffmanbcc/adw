@@ -1,0 +1,89 @@
+
+body{
+
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica", san-serif;
+	font-weight: 100;
+	box-sizing: border-box;
+}
+
+header {
+
+
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 150px;
+	padding: 50px 0px;
+	background-color: #009bc7;
+}
+
+nav: after {
+
+	content:"";
+	clear:both;
+}
+
+nav li{
+
+	display:inline-block;
+	color: #333;
+	padding: 20px;
+	list-style:none;
+
+}
+
+article {
+
+	clear: both;
+	padding: 30px 60px;
+}
+
+footer {
+
+	background-color:#e3e3d3;
+	border:1px solid #d0d0d0;
+	clear: both;
+	padding: 30px 60px;
+}
+
+
+h1 {
+
+	text-align:center;
+}
+
+
+/* after looking at that example... we can check out another type of media query,
+for this one, we will display anything other than the screen.. and we will 
+use the "not" operator, which will negate the entire query */
+
+/* This will creat an if/else statment that will engage whenever the user views
+the website in a media other than the screen such as: print, hanheld, tv, etc. */
+
+@media not screen {
+
+	nav, footer {
+		display:none;
+	}
+
+	a{
+		text-decoration:none;
+		color:inherit;
+	}
+}
+
+/* Note when using the media query "NOT" with media features like (max-width),
+you can not expect by default that the media feature will be included, 
+you need to specify "all" or the media feature that you want to use...
+
+for example..
+
+@media not all and (max-width:800px) {
+	
+
+}
+
+*/
+

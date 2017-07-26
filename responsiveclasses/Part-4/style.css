@@ -1,0 +1,77 @@
+
+body{
+
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica", san-serif;
+	font-weight: 100;
+	box-sizing: border-box;
+}
+
+header {
+
+
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 150px;
+	padding: 50px 0px;
+	background-color: #009bc7;
+}
+
+nav: after {
+
+	content:"";
+	clear:both;
+}
+
+nav li{
+
+	display:inline-block;
+	color: #333;
+	padding: 20px;
+	list-style:none;
+
+}
+
+article {
+
+	clear: both;
+	padding: 30px 60px;
+}
+
+footer {
+
+	background-color:#e3e3d3;
+	border:1px solid #d0d0d0;
+	clear: both;
+	padding: 30px 60px;
+}
+
+
+h1 {
+
+	text-align:center;
+}
+
+/* In this example... we will create a media query for printing.. for this example
+when an individual goes to print a page.. they really only want the content,
+they don't necessarily want all the extra stuff like navigation bars or the 
+footer information.. So we can create a media query that remove those elements
+from the page when our users go to print the screen */
+
+@media print {
+
+	nav, footer {
+		display:none;
+	}
+
+	a{
+		text-decoration:none;
+
+/* color inherit is pretty cool.. because it will use the colors
+that are nearby.. instead of us having to style the colors too.*/
+		color:inherit;
+	}
+}
+

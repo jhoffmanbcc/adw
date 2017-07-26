@@ -1,0 +1,60 @@
+
+body{
+
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica", san-serif;
+	font-weight: 100;
+	box-sizing: border-box;
+}
+
+
+header {
+
+
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 150px;
+	padding: 50px 0px;
+	background-color: #009bc7;
+}
+
+section{
+
+	float: left;
+	font-weight: 300;
+	padding: 30px;
+	margin: 0;
+	width: 50%;
+	font-size: 14px;
+	color: #7d7d7d;
+	box-sizing: border-box;
+
+}
+
+/* ok... so now that we have our default width for a regular size browser... 
+we will add some code... to modify the column div to change when that 
+break point is inacted  
+
+We will first generate the media query with @media ... then we will target 
+all the media types... (this will include screen, print, handheld, or tv.. and 
+so on)  ... although as a side note... we don't actually have to specify all
+as it will be that setting by default. */
+
+/* then I will add the term "and" to place the media feature that I want to affect
+and I will place it in brackets. */
+
+
+
+@media (max-width:600px) {
+	
+	section {
+
+		width: 100%;
+	}
+
+
+}
+
+/* this version of a media query is considered an embedded media query */

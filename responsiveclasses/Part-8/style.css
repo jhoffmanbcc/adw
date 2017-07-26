@@ -1,0 +1,113 @@
+
+
+/* Usually when you create a media query, there are more than
+one media query that you are using... or more than one break point.
+
+There are many ways to layer your media query... It is wise to 
+keep many things outside your media query... for browsers
+that may not be compatible... 
+
+In our examples... we clearly have not been adding that much
+information on the interior of our media queries...
+
+We can either overlap queries or have them back to back */
+
+
+/* When you OVERLAP queries... you will be adding them together
+and the code kind of snow balls... */
+
+@media {min-width: 300px} {
+	
+	article {
+	color: red;
+	border: 2px solid blue;
+	}
+}
+
+@media {min-width: 600px} {
+	
+	article {
+	/* color: red;
+	   border: 2px solid blue; */ 
+
+	   border-radius: 5px; }
+
+@media {min-width: 900px} {
+	
+	article {
+	/* color: red;
+	   border: 2px solid blue; 
+	   border-radius: 5px; 
+
+	   ... and then you can keep going.. but you can override
+	   your css styling as the media queries takes place...*/
+
+	   color: blue;
+
+	 /* keep in mind when doing this style that you need to 
+	 always have the largest value last... because if I 
+	 placce a min-width:600px below this... the 900px changes
+	 will not take place... computers operator in a linear
+	 manner and will process whatever come last ... last */
+
+	}
+
+}
+
+
+/* On the other hand with the back to back model... you are 
+not overlapping your media queries, you will see that because
+you create floors and ceilings with your media queries, there
+will not be any overlaps..*/
+
+@media(min-width: 300px) and (max-width: 599px) {
+
+	article {
+
+		color: red;
+		border: 1px solid red;
+	}
+
+}
+
+
+@media(min-width: 600px) and (max-width: 899px) {
+
+	article {
+
+		color: red;
+		border-radius: 5px;
+	}
+
+}
+
+@media(min-width: 900px) {
+
+	article {
+
+		color: orange;
+		border-radius: 10px;
+	}
+
+}
+
+/* Order of the areas... do not  matter in this example.. but you 
+may have to re-write a lot.  Just make sure that you do not 
+overlap... your pixel dimensions..  */
+
+/* back to back is better for images... but overriding is better
+in general.. */
+
+
+/* it is often best to use your mobile style as your default.. 
+this is good because the mobile style is usually more simple...
+therfore... if someone is viewing on an unsupported browser
+they will see that version first... */
+
+/* In addition.. when openned with a mobile browser .. it will 
+not open all the desktop content... therefore making your site
+leaner for a medium that does not handle larger files as easily.
+
+Lastly... if you are using the overlapping method.. you will be
+building the style with the code in that manner anyway to make
+sure there are no reverse descrepencies. */
