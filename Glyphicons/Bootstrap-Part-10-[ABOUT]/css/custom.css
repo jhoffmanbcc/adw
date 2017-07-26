@@ -1,0 +1,115 @@
+
+
+
+/*  Welcome back to style sheets ;)   Did you miss them??   Okay, lets get down to business */
+
+
+/* ok... before we get too excited... lets talk about font sizes and different ways of displaying fonts... 
+
+	-- We are used to displaying font sizes by pixels -- We love pixels ;)
+	-- Although when they began building responsive sites, they tried to start make everything work by global values and percentages.
+	
+
+	-- For example, if we go by percentages, the site could identify the size of the screen, and then our elements will maintain their
+	   proportions, because they will just maintain a percentage of whatever size the screen might be.  
+
+
+	-- Lets think of a header as 20% of the entire web page when the page is 100%.  Well when the page becomes 80% we will still keep 
+	   the header at 20%, thus the header will be responsive to the dimensions of the page as the viewport or browser size grows and 
+	   shrinks.  
+
+	-- Now in order for this to work as planned, we have to give all of the elements on the page a percentage value.  Otherwise some of
+	   the elments would be dynamic and shrink with the size of the page, while others would not.  
+
+	-- So that solved a lot of the problems on our pages, although, then we had to take into account the text on the page.  Instead of 
+		giving the text percentages, we were planning things based on pixels... Well to solve this problem, we set a standard or a global
+		default size for our text.
+
+	-- The global default font size for Bootstrap fonts is 14px, with a line height above and below the font of 1.428. Therefore the line
+	    height is 14px * 1.428 = gives you an average line height of 20px.
+
+	-- Default broswer font size is usually 16px with an average line height of 20px or 1.25 (20px / 16) ...  */
+
+
+/*  -- Ok... so that is one important area to think about... So instead of using percentages on the site for fonts to gain inheritance, 
+		they didn't want to have to write the percentages over and over again, So they created relative units of measurement. 
+
+        They decided to use a new term called the "em"and "rem".  
+
+     -- REM is an awfully decent band, and they sing about shiny happy people :  https://www.youtube.com/watch?v=iCQ0vDAbF7s  */
+
+
+/*   This website does a great job of breaking down Em and Rem:   https://j.eremy.net/confused-about-rem-and-em/  
+		and this website:   http://www.vanseodesign.com/css/em-px/   [assign those for homework ] */
+
+/*   So lets cut to the chase... Rem is related to root variables and we won't be using those... so lets worry about that later.  
+ 	While em will relate to the default font value for our web page.  Since we are using Bootstrap, the default font value is 14px.
+
+ 	On an ordinary page, one can set the font size property to set the first value for an "em" for all fonts within the 
+ 	paragraph of the body.  Afterwards all values within the body will inherit that value. 
+
+
+	-- So if we want our font to be 14px in size than we just have to enter ---   1em   -- the browser will understand this means 14px.
+
+	-- If want our font to be 28px in size we will enter -- 2em  --- the browser will understand this means 24px.  */
+
+/* Other default sizes in Bootstrap are:  
+
+			h1 Bootstrap heading (36px)
+			h2 Bootstrap heading (30px)
+			h3 Bootstrap heading (24px)
+			h4 Bootstrap heading (18px)
+			h5 Bootstrap heading (14px)
+			h6 Bootstrap heading (12px);    */
+
+/*   Now if we want our font value to be 20px, we will need to divide 20px by 14px (please use a calculator), 
+		then our em will be  1.42857em   
+
+
+		-- you can truncate that number to 1.429 or 1.4 if you so desire... it is your website after all   ;)  */
+
+
+
+/*  Ok... now back to business, I have wanted to change the background color for ever so lets do it */
+
+
+body {
+
+
+	background-color: #ebd7b6;
+}
+
+
+
+/*  next we will modify the padding and margins of the footer with em.. */
+
+footer {
+
+	padding: 2em ;
+	margin:  3em 0;
+
+/* we still use pixels a lot with borders, because we don't want the borders to grow and get smaller as the browser grows 
+and decreases */
+	border-top: 1px solid #ddd;
+
+/* Now lets set our text color */
+
+	color: #767354;
+	text-align: center;
+}
+
+/* now we can go and see that style created */
+
+
+
+/*  The next step is that we can overide colors and CSS features in Bootstap  */
+
+/*  For this example.. lets change the color of our glyphicons which are current black  */
+
+
+.glyphicon {
+
+
+	color: #7f4539;
+}
+
